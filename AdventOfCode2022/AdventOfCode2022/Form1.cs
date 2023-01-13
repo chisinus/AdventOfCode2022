@@ -7,9 +7,10 @@ namespace AdventOfCode2022
             InitializeComponent();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private async void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            // ctrlResult.Text = await Day1.ProcessDay1(1, 1);
+            ctrlResult.Text = await Day1.ProcessDay1(3, 1);
         }
     }
 }
