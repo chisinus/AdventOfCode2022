@@ -10,7 +10,10 @@ namespace AdventOfCode2022
         private async void btnSubmit_Click(object sender, EventArgs e)
         {
             // ctrlResult.Text = await Day1.ProcessDay1(1, 1);
-            ctrlResult.Text = await Day1.ProcessDay1(3, 1);
+            // ctrlResult.Text = await Day1.ProcessDay1(3, 1);
+
+            //ctrlResult.Text = await Day2.Process_1();
+            ctrlResult.Text = await Day2.Process_2();
         }
     }
 }
