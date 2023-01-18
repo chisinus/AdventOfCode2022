@@ -22,7 +22,10 @@ namespace AdventOfCode2022
             // ctrlResult.Text = await Day4.Process_2();
 
             // ctrlResult.Text = await Day5.Process(true);
-            ctrlResult.Text = await Day5.Process(false);
+            // ctrlResult.Text = await Day5.Process(false);
+            
+            // ctrlResult.Text = await Day6.Process_1(4);
+            ctrlResult.Text = await Day6.Process_1(14);
         }
     }
 }

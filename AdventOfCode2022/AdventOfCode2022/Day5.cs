@@ -7,25 +7,16 @@ using System.Xml;
 
 namespace AdventOfCode2022
 {
-    class Instruction
-    {
-        public int Moves { get; set; }
-        public int From { get; set; }
-        public int To { get; set; }
-    }
-
     internal static class Day5
     {
         internal async static Task<string> Process(bool reverse)
         {
             List<string> data = await Utils.ReadFile("day5_1.txt");
 
-            int count = 0;
             List<char>[] stacks = new List<char>[9];
             for (int i = 0; i < 9; i++)
                 stacks[i] = new List<char>();
 
-            List<Instruction> instructions = new List<Instruction>();
             foreach (string s in data)
             {
                 if (s.Trim().Length > 0 && s.Trim()[0] == '[')
