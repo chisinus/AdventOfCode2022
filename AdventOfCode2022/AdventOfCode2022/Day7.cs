@@ -38,7 +38,7 @@ namespace AdventOfCode2022
         long total = 0;
         long minSize = 0;
 
-        internal async Task<string> Process_1()
+        internal async Task<string> Part1()
         {
             List<string> data = await Utils.ReadFile("day7_1.txt");
 
@@ -124,7 +124,7 @@ namespace AdventOfCode2022
             return size;
         }
 
-        internal async Task<string> Process_2()
+        internal async Task<string> Part2()
         {
             List<string> data = await Utils.ReadFile("day7_1.txt");
 

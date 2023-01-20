@@ -16,8 +16,7 @@ namespace AdventOfCode2022
 
         List<Point> visited = new List<Point>();
 
-        #region process_1
-        internal async Task<string> Process_1(int noOfKnots)
+        internal async Task<string> Process(int noOfKnots)
         {
             knots = new Point[noOfKnots];
             for (int i=0; i<noOfKnots; i++)
@@ -151,7 +150,5 @@ namespace AdventOfCode2022
                 }
             }
         }
-        #endregion process_1
-
     }
 }

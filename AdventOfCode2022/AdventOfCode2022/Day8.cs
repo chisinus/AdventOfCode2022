@@ -20,8 +20,8 @@ namespace AdventOfCode2022
 
     internal class Day8
     {
-        #region process_1
-        internal async Task<string> Process_1()
+        #region Part1
+        internal async Task<string> Part1()
         {
             List<string> data = await Utils.ReadFile("day8_1.txt");
 
@@ -117,10 +117,10 @@ namespace AdventOfCode2022
 
             return GetRightTallest(trees, row, col + 1);
         }
-        #endregion process_1
+        #endregion Part1
 
-        #region process_2
-        internal async Task<string> Process_2()
+        #region Part2
+        internal async Task<string> Part2()
         {
             List<string> data = await Utils.ReadFile("day8_1.txt");
 
@@ -216,7 +216,7 @@ namespace AdventOfCode2022
 
             return count;
         }
-        #endregion process_2
+        #endregion Part2
 
     }
 }

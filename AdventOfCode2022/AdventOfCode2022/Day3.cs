@@ -8,7 +8,7 @@ namespace AdventOfCode2022
 {
     internal static class Day3
     {
-        internal async static Task<string> Process_1()
+        internal async static Task<string> Part1()
         {
             List<string> data = await Utils.ReadFile("day3_1.txt");
 
@@ -51,7 +51,7 @@ namespace AdventOfCode2022
             return total;
         }
 
-        internal async static Task<string> Process_2()
+        internal async static Task<string> Part2()
         {
             List<string> data = await Utils.ReadFile("day3_1.txt");
 

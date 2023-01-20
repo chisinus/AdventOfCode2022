@@ -8,7 +8,7 @@ namespace AdventOfCode2022
 {
     internal static class Day1
     {
-        public async static Task<string> ProcessDay1(int topN, int seqNo)
+        public async static Task<string> Process(int topN, int seqNo)
         {
             List<string> data = await Utils.ReadFile(string.Format("day1_{0}.txt", seqNo));
 

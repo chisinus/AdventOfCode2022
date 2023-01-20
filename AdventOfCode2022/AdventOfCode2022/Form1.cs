@@ -9,32 +9,35 @@ namespace AdventOfCode2022
 
         private async void btnSubmit_Click(object sender, EventArgs e)
         {
-            // ctrlResult.Text = await Day1.ProcessDay1(1, 1);
-            // ctrlResult.Text = await Day1.ProcessDay1(3, 1);
+            //ctrlResult.Text = await Day1.Process(1, 1);
+            //ctrlResult.Text = await Day1.Process(3, 1);
 
-            //ctrlResult.Text = await Day2.Process_1();
-            //ctrlResult.Text = await Day2.Process_2();
+            //ctrlResult.Text = await Day2.Part1();
+            //ctrlResult.Text = await Day2.Part2();
 
-            // ctrlResult.Text = await Day3.Process_1();
-            // ctrlResult.Text = await Day3.Process_2();
+            //ctrlResult.Text = await Day3.Part1();
+            //ctrlResult.Text = await Day3.Part2();
 
-            // ctrlResult.Text = await Day4.Process_1();
-            // ctrlResult.Text = await Day4.Process_2();
+            //ctrlResult.Text = await Day4.Part1();
+            //ctrlResult.Text = await Day4.Part2();
 
-            // ctrlResult.Text = await Day5.Process(true);
-            // ctrlResult.Text = await Day5.Process(false);
+            //ctrlResult.Text = await Day5.Process(true);
+            //ctrlResult.Text = await Day5.Process(false);
 
-            // ctrlResult.Text = await Day6.Process_1(4);
-            // ctrlResult.Text = await Day6.Process_1(14);
+            //ctrlResult.Text = await Day6.Process(4);
+            //ctrlResult.Text = await Day6.Process(14);
 
-            // ctrlResult.Text = await new Day7().Process_1();
-            // ctrlResult.Text = await new Day7().Process_2();
+            //ctrlResult.Text = await new Day7().Part1();
+            //ctrlResult.Text = await new Day7().Part2();
 
-            // ctrlResult.Text = await new Day8().Process_1();
-            // ctrlResult.Text = await new Day8().Process_2();
+            //ctrlResult.Text = await new Day8().Part1();
+            //ctrlResult.Text = await new Day8().Part2();
 
-            // ctrlResult.Text = await new Day9().Process_1(2);
-            ctrlResult.Text = await new Day9().Process_1(10);
+            //ctrlResult.Text = await new Day9().Process(2);
+            ctrlResult.Text = await new Day9().Process(10);
+
+            // ctrlResult.Text = await new Day10().Part1();
+            // ctrlResult.Text = await new Day10().Part2();
         }
     }
 }
