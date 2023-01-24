@@ -46,8 +46,11 @@ namespace AdventOfCode2022
             //ctrlResult.Text = await new Day12().Process(20, true);
             //ctrlResult.Text = await new Day12().Process(20, true);
 
-            //ctrlResult.Text = await new Day13().Process_1();
-            ctrlResult.Text = await new Day13().Process_2();
+            //ctrlResult.Text = await new Day13().Part1();
+            //ctrlResult.Text = await new Day13().Part2();
+
+            //ctrlResult.Text = await new Day14().Part1();
+            //ctrlResult.Text = await new Day14().Part2();
         }
     }
 }

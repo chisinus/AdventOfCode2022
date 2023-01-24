@@ -4,7 +4,7 @@ namespace AdventOfCode2022
 {
     internal class Day13
     {
-        internal async Task<string> Process_1()
+        internal async Task<string> Part1()
         {
             List<string> data = await Utils.ReadFile("day13_1.txt");
 
@@ -23,7 +23,7 @@ namespace AdventOfCode2022
             return result.ToString();
         }
 
-        internal async Task<string> Process_2()
+        internal async Task<string> Part2()
         {
             List<string> data = await Utils.ReadFile("day13_1.txt", true);
             data.Add("[[2]]");
