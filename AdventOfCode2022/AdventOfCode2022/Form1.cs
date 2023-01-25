@@ -51,6 +51,9 @@ namespace AdventOfCode2022
 
             //ctrlResult.Text = await new Day14().Part1();
             //ctrlResult.Text = await new Day14().Part2();
+
+            //ctrlResult.Text = await new Day15().Part1();
+            ctrlResult.Text = await new Day15().Part2();
         }
     }
 }
