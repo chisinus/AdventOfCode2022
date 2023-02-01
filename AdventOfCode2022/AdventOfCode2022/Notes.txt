@@ -1,1 +1,8 @@
 ﻿Provide ownerproof-2976744-1673582740-be360d0d969b if you are asked to prove you own this account by an Advent of Code administrator. Don't post this code in a public place.
+
+Pending:
+
+Day 12: Learn special algorithm
+Day 16: Learn special algorithm
+Day 17: Part 2 big data
+Day 18: Part 2

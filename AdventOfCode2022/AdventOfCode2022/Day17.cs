@@ -95,16 +95,14 @@ namespace AdventOfCode2022
         int currentMove = 0;
         List<int[]> chamber = new List<int[]>();
         Rock currentRock;
-        int aaa;
 
         #region Part1
-        internal async Task<string> Part1()
+        internal async Task<string> Process(long rocks)
         {
             List<string> data = await Utils.ReadFile("day17_1.txt");
             moves = data[0];
 
-            for (int i = 0; i < 2022; i++)
-            //for (int i = 0; i < 10; i++)
+            for (long i = 0; i < rocks; i++)
             {
                 currentRock = GenerateCurrentRock();
 
@@ -112,7 +110,6 @@ namespace AdventOfCode2022
 
                 DropRock();
 
-                int kk = 0;
                 // Mark chamber
                 for (int m = 0; m < currentRock.Height; m++)
                 {
@@ -120,24 +117,20 @@ namespace AdventOfCode2022
                     {
                         if (currentRock.Pattern[m][n] == 1)
                         {
-                            if (chamber[currentRock.Row + m][currentRock.Col + n] == 1)
-                            {
-                                kk++;
-                            }
                             chamber[currentRock.Row + m][currentRock.Col + n] = 1;
                         }
                     }
                 }
             }
 
-            PrintChamber(chamber.Count);
+            //PrintChamber(chamber.Count);
             int emptyRow = 0;
             for (emptyRow = 0; emptyRow < chamber.Count; emptyRow++)
             {
                 if (chamber[emptyRow].Any(c => c == 1)) break;
             }
 
-            int result = chamber.Count - emptyRow;
+            long result = chamber.Count - emptyRow;
 
 
             return result.ToString();
@@ -151,10 +144,7 @@ namespace AdventOfCode2022
             {
                 for (int j = 0; j < 7; j++)
                 {
-                    if (chamber[i][j] == 2)
-                        Debug.Write('O');
-                    else
-                        Debug.Write(chamber[i][j] == 0 ? '.' : '#');
+                    Debug.Write(chamber[i][j] == 0 ? '.' : '#');
                 }
 
                 Debug.WriteLine("");
@@ -209,22 +199,6 @@ namespace AdventOfCode2022
 
         private void DropRock()
         {
-            //if (aaa == 21)
-            //{
-            //    for (int m = 0; m < currentRock.Height; m++)
-            //    {
-            //        for (int n = 0; n < currentRock.Width; n++)
-            //        {
-            //            if (currentRock.Pattern[m][n] == 1)
-            //            {
-            //                chamber[currentRock.Row + m][currentRock.Col + n] = 2;
-            //            }
-            //        }
-            //    }
-
-            //    PrintChamber();
-            //}
-
             MoveRockRightLeft();
 
             if (MoveRockDown()) DropRock();
